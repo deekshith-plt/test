@@ -11,7 +11,7 @@ build:
           - js-scrutinizer-run
           - command: "npm --prefix src/lambdaa run test"
             coverage:
-              file: ./src/lambdaa/coveragee/lcov.info
+              file: ./src/lambdaa/coverage/lcov.info
               format: lcov
   environment:
     node: "v14.21.3"
