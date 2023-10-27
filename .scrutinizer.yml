@@ -6,7 +6,7 @@ build:
       tests:
         override:
           - js-scrutinizer-run
-          - command: "npm --prefix src/lambda run test"
+          - command: "npm install && npm --prefix src/lambda run test"
             coverage:
               file: ./src/lambda/coverage/lcov.info
               format: lcov
