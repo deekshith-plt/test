@@ -4,9 +4,9 @@ build:
   nodes:
     analysis:
       dependencies:
-          before:s
+          before:
             - npm --prefix src/lambdaa install
-      tests:
+      tests:s
         override:
           - js-scrutinizer-run
           - command: "npm --prefix src/lambdaa run test"
