@@ -1,0 +1,14 @@
+checks:
+  javascript: true
+build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - js-scrutinizer-run
+          - command: "npm --prefix src/lambda run test"
+            coverage:
+              file: ./src/lambda/coverage/lcov.info
+              format: lcov
+  environment:
+    node: "v14.21.3"
