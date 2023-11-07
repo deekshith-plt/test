@@ -3,9 +3,6 @@ checks:
 build:
   nodes:
     analysis:
-      dependencies:
-          before:
-            - npm --prefix src/lambdaa install
       tests:
         override:
           - js-scrutinizer-run
